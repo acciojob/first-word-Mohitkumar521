@@ -1,8 +1,16 @@
-function firstWord(s) {
-  // your code here
+function firstWord(str) {
+  if (str === "" || !str.includes(" ")) {
+    // If the input string is empty or does not contain any space, return the entire string
+    return str;
+  } else {
+    // Find the index of the first space
+    const spaceIndex = str.indexOf(" ");
+    
+    // Extract and return the first word (characters up to the first space)
+    return str.substring(0, spaceIndex);
+  }
 }
 
-// Do not change the code below
-
-const s = prompt("Enter String:");
-alert(firstWord(s));
+// Example usage:
+const inputString = prompt("Enter String:");
+alert(firstWord(inputString));
