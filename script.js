@@ -11,6 +11,6 @@ function firstWord(str) {
   }
 }
 
-// Example usage:
+// Example usa
 const inputString = prompt("Enter String:");
 alert(firstWord(inputString));
