@@ -1,5 +1,5 @@
 function firstWord(str) {
-  if (str === "" || !str.includes('')) {
+  if (str === '' || !str.includes('')) {
     // If the input string is empty or does not contain any space, return the entire string
     return str;
   } else {
